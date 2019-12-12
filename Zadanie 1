@@ -1,0 +1,115 @@
+package pl.tt;
+import javafx.scene.effect.Blend;
+import org.w3c.dom.ls.LSOutput;
+
+import javax.swing.*;
+import java.lang.module.FindException;
+import java.sql.SQLOutput;
+import java.util.Scanner;
+import java.lang.Math;
+
+// Arkusz 2; Zadanie 3
+
+public class Main {
+    public static void main(String[] args) {
+
+        int[] array = new int[10];
+        array[0] = (int) (Math.random() * 10);
+        array[1] = (int) (Math.random() * 10);
+        array[2] = (int) (Math.random() * 10);
+        array[3] = (int) (Math.random() * 10);
+        array[4] = (int) (Math.random() * 10);
+        array[5] = (int) (Math.random() * 10);
+        array[6] = (int) (Math.random() * 10);
+        array[7] = (int) (Math.random() * 10);
+        array[8] = (int) (Math.random() * 10);
+        array[9] = (int) (Math.random() * 10);
+
+        System.out.println("Wylosowane liczby:");
+        System.out.print(array[0]);
+        System.out.print(" ");
+        System.out.print(array[1]);
+        System.out.print(" ");
+        System.out.print(array[2]);
+        System.out.print(" ");
+        System.out.print(array[3]);
+        System.out.print(" ");
+        System.out.print(array[4]);
+        System.out.print(" ");
+        System.out.print(array[5]);
+        System.out.print(" ");
+        System.out.print(array[6]);
+        System.out.print(" ");
+        System.out.print(array[7]);
+        System.out.print(" ");
+        System.out.print(array[8]);
+        System.out.print(" ");
+        System.out.println(array[9]);
+        System.out.print("Min: ");
+
+        int min = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < min)
+                min = array[i];
+        }
+        System.out.print(min);
+        System.out.print(" ");
+        System.out.print("Max: ");
+        int max = array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > max)
+                max = array[i];
+        }
+        System.out.println(max);
+
+        System.out.println("Srednia:");
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        double average = sum / 10;
+        System.out.println(average);
+
+        System.out.println("Mniejszych od śr.:");
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] < average) {
+                int lenght = array[i];
+                System.out.println(lenght);
+            }
+        }
+            System.out.println("Większych od śr.:");
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] > average) {
+                    int lenght2 = array[i];
+                    System.out.println(lenght2);
+                }
+            }
+            System.out.println("Liczby w odwrotnej kolejności:");
+                System.out.print(array[9]);
+                System.out.print(" ");
+                System.out.print(array[8]);
+                System.out.print(" ");
+                System.out.print(array[7]);
+                System.out.print(" ");
+                System.out.print(array[6]);
+                System.out.print(" ");
+                System.out.print(array[5]);
+                System.out.print(" ");
+                System.out.print(array[4]);
+                System.out.print(" ");
+                System.out.print(array[3]);
+                System.out.print(" ");
+                System.out.print(array[2]);
+                System.out.print(" ");
+                System.out.print(array[1]);
+                System.out.print(" ");
+                System.out.println(array[1]);
+            }
+
+
+        }
+
+
+
+
+
